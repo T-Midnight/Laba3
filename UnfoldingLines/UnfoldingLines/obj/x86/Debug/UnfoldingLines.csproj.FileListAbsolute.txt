@@ -1,0 +1,5 @@
+d:\Laba3\UnfoldingLines\UnfoldingLines\bin\Debug\UnfoldingLines.exe
+d:\Laba3\UnfoldingLines\UnfoldingLines\bin\Debug\UnfoldingLines.pdb
+d:\Laba3\UnfoldingLines\UnfoldingLines\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\Laba3\UnfoldingLines\UnfoldingLines\obj\x86\Debug\UnfoldingLines.exe
+d:\Laba3\UnfoldingLines\UnfoldingLines\obj\x86\Debug\UnfoldingLines.pdb
