@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Globalization;
-using System.Text;
+
 // все библиотеки используешь;)
 
 
@@ -15,10 +12,9 @@ namespace UnfoldingLines {
     class Program
     {
         static void Main() {
-            Console.WriteLine("Enter the string...");
+            Console.WriteLine("Enter the string");
             string s = Console.ReadLine();
-            string[] str = s.Split();
-            string[] newstr = new string[str.Length];
+
             /* разделение строки на слова. Слова разделяются друг с другом пробелами и всякими разделителями, типа точек, запятых и т.д. 
              * Мы возьмём простой вариант и примем, что иных разделителей, кроме как пробелы между словами у нас нет.
             */
@@ -29,13 +25,10 @@ namespace UnfoldingLines {
                 Console.WriteLine(words[i]);
             }
             // тебе осталось поменять в массиве строк words все элементы местами
-            for (int i = 0; i < str.Length; i++)
+            for (int i = words.Length - 1; i < 0; i--)
             {
-               newstr[i] = str[i];
+                Console.WriteLine(words[i]);
             }
-
-            Array.Reverse(newstr);
-            Console.WriteLine("Inverted string: " + newstr);
 
             Console.ReadKey();
         }
