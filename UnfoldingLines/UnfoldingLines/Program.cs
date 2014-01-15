@@ -5,7 +5,7 @@
 
 /* разделим задачу на подзадачи:
    1. Надо разделить строку на слова
- * 2. Поменять слова местами
+   2. Поменять слова местами
  */
 
 namespace UnfoldingLines {
@@ -19,16 +19,31 @@ namespace UnfoldingLines {
              * Мы возьмём простой вариант и примем, что иных разделителей, кроме как пробелы между словами у нас нет.
             */
             string[] words = s.Split(' ');
+            string[] a = new string[words.Length];
+            string b;
             // теперь у нас в каждом элементе массива строк words лежит по слову. Проверим это выводом.
             for (int i = 0; i < words.Length; i++)
             {
                 Console.WriteLine(words[i]);
             }
             // тебе осталось поменять в массиве строк words все элементы местами
-            for (int i = words.Length - 1; i < 0; i--)
+            //for (int i = words.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(words[i] + " ");
+            //}
+            int n = words.Length;
+            for (int i = 0; i < n /2 ; i++)
             {
-                Console.WriteLine(words[i]);
+                b = words[i];
+                words[i] = words[n /2 - i + 1];
+                words[n /2 - i + 1] = b;
+                Console.Write( " " + words[i]+ b[i]);
             }
+
+            //for (int i = 0; i < words.Length - 1; i++)
+            //{
+            //    Console.Write(b);
+            //}
 			// ок. это вывела их задом наперёд. А теперь твоя задача именно поменять местами элементы в массиве. Не просто вывод, сами внутри массива поменять местами.
             Console.ReadKey();
         }
