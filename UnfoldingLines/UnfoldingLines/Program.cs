@@ -25,19 +25,20 @@ namespace UnfoldingLines {
             for (int i = 0; i < words.Length; i++)
             {
                 Console.WriteLine(words[i]);
+                a[i] = words[i];
             }
             // тебе осталось поменять в массиве строк words все элементы местами
             //for (int i = words.Length - 1; i >= 0; i--)
             //{
             //    Console.Write(words[i] + " ");
             //}
-            int n = words.Length;
-            for (int i = 0; i < n /2 ; i++)
+            int n = a.Length;
+            for (int i = 0; i < n / 2 ; i++)
             {
-                b = words[i];
-                words[i] = words[n /2 - i + 1];
-                words[n /2 - i + 1] = b;
-                Console.Write( " " + words[i]+ b[i]);
+                b = a[i];
+                a[i] = a[n / 2 - i + 1];
+                a[n / 2 - i + 1] = b;
+                Console.Write(a[i] + " ");
             }
 
             //for (int i = 0; i < words.Length - 1; i++)
