@@ -36,11 +36,14 @@ namespace UnfoldingLines {
             for (int i = 0; i < n / 2 ; i++)
             {
                 b = a[i];
-                a[i] = a[n / 2 - i + 1];
-                a[n / 2 - i + 1] = b;
-                Console.Write(a[i] + " ");
+                a[i] = a[n - i - 1];
+                a[n - i - 1] = b;
             }
 
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(a[i] + " ");
+            }
             //for (int i = 0; i < words.Length - 1; i++)
             //{
             //    Console.Write(b);
